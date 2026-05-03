@@ -1,6 +1,8 @@
 # claude-skills
 
-A collection of [Claude skills](https://www.anthropic.com/news/skills) for editorial, writing, and product work. Each skill lives in its own folder with a `SKILL.md` file plus any references it needs.
+> A growing collection of Claude skills for writing and editorial work — currently featuring a combined line + copy editor for nonfiction manuscripts.
+
+A collection of [Claude skills](https://www.anthropic.com/news/skills) for serious writing and editing tasks. Each skill lives in its own folder with a `SKILL.md` file plus any references it needs.
 
 ## Skills
 
