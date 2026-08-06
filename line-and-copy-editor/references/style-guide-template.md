@@ -9,8 +9,8 @@ A living document. Update it on every chunk. Check it before starting each new c
 - **Author:**
 - **Title / working title:**
 - **Genre:**
-- **Style standard:** [e.g., Chicago Manual of Style, 17th ed.]
-- **Dictionary:** [e.g., Merriam-Webster's Collegiate, 11th ed.]
+- **Style standard:** [e.g., The Chicago Manual of Style, 18th ed.]
+- **Dictionary:** [e.g., Merriam-Webster (merriam-webster.com); Collegiate 11th ed. in print]
 - **Variant of English:** [US / UK / CA / AU]
 - **Starting wordcount:**
 - **Target wordcount:**
@@ -121,6 +121,16 @@ Things that look like errors but are intentional. Do not silently correct.
 - **Lists:** [bulleted / numbered conventions, terminal punctuation]
 - **Footnotes / endnotes:** [which, format]
 - **Citations:** [author-date / notes-bibliography / numbered]
+
+---
+
+## Pattern dose tallies
+
+Per-chapter counts for the dosed patterns in `ai-prose-patterns.md`. Update after each chunk; over-budget chapters get a comment flagging the pattern.
+
+| Chapter | Negative parallelisms kept | Rule-of-three kept | And/But openers | Em dashes remaining | Notes |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
 
 ---
 
