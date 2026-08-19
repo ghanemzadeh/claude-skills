@@ -5,9 +5,9 @@ description: >-
   prose work plus grammar, consistency, and factual cross-checks in one pass.
   Use for a line edit, copy edit, combined or stylistic edit, manuscript
   tightening or compression, SPAG and consistency work, a Chicago-style
-  cleanup, or removing AI-drafting and humanizer artifacts from a manuscript.
-  Produces real Word tracked changes, a running style sheet, and an editorial
-  cover letter.
+  cleanup, removing AI-drafting and humanizer artifacts from a manuscript, or
+  editing AI-assisted text toward genuinely human prose. Produces real Word
+  tracked changes, a running style sheet, and an editorial cover letter.
 license: MIT
 allowed-tools:
   - Read
@@ -18,7 +18,7 @@ allowed-tools:
   - Bash
   - AskUserQuestion
 metadata:
-  version: "2.0.0"
+  version: "2.1.0"
 ---
 
 # Line and copy editor
@@ -83,13 +83,27 @@ An edit may not introduce any fact, name, number, date, quote, or source that is
 
 ## AI-prose artifacts
 
-If the manuscript has been AI-drafted or run through a humanizer tool, pattern work is the core of the edit. The full catalog lives in `references/ai-prose-patterns.md`: thirty-four patterns across six groups (content, language, style, communication, filler and rhetoric, and the mechanical debris humanizer passes leave behind), each with a default action and, where relevant, a per-chapter dose budget.
+If the manuscript has been AI-drafted or run through a humanizer tool, pattern work is the core of the edit. The full catalog lives in `references/ai-prose-patterns.md`: thirty-six patterns across six groups (content, language, style, communication, filler and rhetoric, and the mechanical debris humanizer passes leave behind), each with a default action and, where relevant, a per-chapter dose budget.
 
 Three principles from the catalog shape everything else:
 
 - Most patterns are bad in aggregate, not in isolation. One em dash is prose; a cluster is a tell. Look for pileups, and read the catalog's false-positives list before flagging anything.
 - Sweep for mechanical artifacts (double spaces, stranded commas, quote mixing) with grep before reading for prose. They hide in clean-looking paragraphs.
 - Cross-chapter consistency needs lists, not memory: recurring names, facts, defined-term capitalization. Build the lists early (see Cross-chapter consistency below) and grep against them.
+
+## Editing toward human prose
+
+Removing machine tells is half the prose layer. A page can be clean of every cataloged pattern and still read machine-made, because the strongest signals are document-level: how sentence lengths vary, how paragraphs are sized, how chapters end, whether insertions match the author's register. AI detectors such as Pangram are holistic classifiers trained on whole documents; scrubbing tells does not fool them, and this skill makes no attempt to. The durable edit gives the prose the qualities human writing actually has. Aim at those directly:
+
+- **Sentence rhythm.** A human page mixes a six-word sentence with a forty-word one. Preserve that mix and restore it where drafting flattened it. When compression tightens many sentences at once, vary where the cuts land so the survivors differ in length and shape.
+- **Paragraph variance.** Uniform paragraph sizes are a machine signature. Let a one-sentence paragraph stand. Never split or merge paragraphs to make the page tidier.
+- **Endings.** Human conclusions run short. Cut recap padding (pattern 28) and let chapters end on their last concrete point.
+- **Register.** Insertions match the author's baseline. If the author writes contractions, insertions use contractions; if the author is blunt, the insertion is blunt. Formal text spliced into a loose manuscript reads as a seam.
+- **Specificity.** Human writing holds hard-to-fabricate particulars. Where the manuscript goes vague or suspiciously generic (pattern 5), the route to specificity is an author query asking for the lived detail. Never invent it.
+- **Honest negativity.** Relentless positivity is a machine register. Where the author criticizes, admits uncertainty, or leaves a judgment mixed, protect it.
+- **Imperfection.** A slightly awkward sentence in the author's voice beats a smooth one in nobody's. Merely imperfect is not a defect; leave it.
+
+The catalog's "Signs of human writing" section lists what these qualities look like on the page, and the pre-delivery checklist carries the aggregate checks: rhythm variance on edited pages, register match in insertions, endings free of recap.
 
 ## Pass structure for a combined edit
 
@@ -232,6 +246,7 @@ When the engagement is done:
 - Zero factual contradictions across chapters for any specific date, number, or name
 - Zero discrepancies between in-text citations and the reference list
 - Style sheet complete enough that someone else could pick up a future revision and stay consistent
+- Rhythm intact at page scale: sentence and paragraph lengths in edited pages vary at least as much as in the author's cleanest untouched ones
 - Author voice intact. This is the criterion that fails most often: if the author reads the edited version and feels smoothed into someone else, the edit is too heavy, however clean the prose reads.
 
 ## Deliverables

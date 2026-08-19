@@ -23,13 +23,13 @@ line-and-copy-editor/
 ├── README.md                             # this file
 └── references/
     ├── style-guide-template.md           # template for the running style sheet
-    ├── ai-prose-patterns.md              # catalog of 34 machine-drafting patterns
+    ├── ai-prose-patterns.md              # catalog of 36 machine-drafting patterns
     └── pre-delivery-checklist.md         # pass/fail self-check run before each chunk ships
 ```
 
 `SKILL.md` is the operational document: scope, the no-fabrication rule, order of operations inside a chunk (compression first, then copy edits, then fact checks), compression strategy, track changes vs comments, style sheet management, cross-chapter consistency tracking, citation alignment, the calibration phase, quality bar, deliverables, default standards (Chicago 18th, Merriam-Webster, US English), and a technical reference for producing real Word track changes via docx XML.
 
-`references/ai-prose-patterns.md` is the pattern catalog: 34 patterns across six groups, each with trigger words, a default action (track change, comment, cover-letter note, or leave), and a dose budget where a pattern is only a problem in aggregate. It merges the humanizer pattern set with the editing principles from no-ai-slop, adapted for surgical track-changes work instead of rewriting, and adds the mechanical artifacts that humanizer passes themselves leave behind.
+`references/ai-prose-patterns.md` is the pattern catalog: 36 patterns across six groups, each with trigger words, a default action (track change, comment, cover-letter note, or leave), and a dose budget where a pattern is only a problem in aggregate. It merges the humanizer pattern set with the editing principles from no-ai-slop, adapted for surgical track-changes work instead of rewriting, and adds the mechanical artifacts that humanizer passes themselves leave behind. Since v2.1.0 the skill also carries document-level guidance on editing toward human prose: sentence and paragraph variance, short endings, register match in insertions, and specificity via author query.
 
 `references/pre-delivery-checklist.md` is the gate each chunk passes before delivery: voice, proportionality, no new slop in the insertions, no fabricated facts, dose budgets, and docx mechanics.
 
@@ -65,8 +65,10 @@ This skill was adapted from prior projects, all used under MIT license:
 
 - [@lfurze/claude-skills](https://github.com/lfurze/claude-skills): docx XML editing technical reference and multi-pass workflow structure.
 - [@felipelobomotta-blip/book-genesis-v4](https://github.com/felipelobomotta-blip/book-genesis-v4): editor role definition, scope framing, AI-prose artifact awareness, and quality-bar conventions.
-- [@blader/humanizer](https://github.com/blader/humanizer) (v2.9.1): the pattern set underlying `references/ai-prose-patterns.md`, itself based on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide.
-- [@petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop): editing principles (minimum effective edits, proportionality, the portability test), word lists, and the eval-checklist approach behind `references/pre-delivery-checklist.md`.
+- [@blader/humanizer](https://github.com/blader/humanizer) (v2.11.2): the pattern set underlying `references/ai-prose-patterns.md`, itself based on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide.
+- [@petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) (v1.0.6): editing principles (minimum effective edits, proportionality, the portability test), word lists, and the eval-checklist approach behind `references/pre-delivery-checklist.md`.
+
+The "Editing toward human prose" section and the human-writing checklist items draw on published research from Pangram Labs ([pangram.com/blog](https://www.pangram.com/blog) and the [Pangram substack](https://pangram.substack.com)) about document-level differences between human and AI prose. Cited as research; no code or text is reused.
 
 See the [parent README](../README.md#acknowledgments) for the full attribution and copyright notices.
 

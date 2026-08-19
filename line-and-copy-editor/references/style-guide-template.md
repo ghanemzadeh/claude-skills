@@ -110,6 +110,7 @@ Things that look like errors but are intentional. Do not silently correct.
 
 - e.g., "Author uses sentence fragments deliberately for rhythm at chapter ends."
 - e.g., "Author opens sentences with 'And' / 'But' — leave when rhythm-driven, flag when patterning emerges."
+- e.g., "Author contracts freely ('don't', 'it's') — insertions must match."
 - e.g., "Author uses [specific tic] — preserve."
 
 ---
@@ -128,9 +129,9 @@ Things that look like errors but are intentional. Do not silently correct.
 
 Per-chapter counts for the dosed patterns in `ai-prose-patterns.md`. Update after each chunk; over-budget chapters get a comment flagging the pattern.
 
-| Chapter | Negative parallelisms kept | Rule-of-three kept | And/But openers | Em dashes remaining | Notes |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
+| Chapter | Negative parallelisms kept | Rule-of-three kept | And/But openers | Em dashes remaining | Colon reveals kept | Notes |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |
 
 ---
 

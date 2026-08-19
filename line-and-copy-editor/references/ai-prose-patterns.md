@@ -37,7 +37,7 @@ Dose: a single contextualized citation is fine; the roll call is the tell.
 
 ### 3. Superficial "-ing" analysis
 
-Watch for: trailing participle clauses that pretend to explain: "…, highlighting", "…, reflecting", "…, symbolizing", "…, showcasing", "…, ensuring", "…, fostering".
+Watch for: trailing participle clauses that pretend to explain: "…, highlighting", "…, reflecting", "…, symbolizing", "…, showcasing", "…, ensuring", "…, fostering", "…, emphasizing", "…, underscoring", "…, encompassing".
 
 The clause asserts meaning the sentence has not earned. Cutting it almost never loses information.
 
@@ -53,14 +53,16 @@ Ad copy in the middle of nonfiction. The neutral version is nearly always shorte
 Default action: Track change to the neutral statement.
 Fix: "Nestled in the breathtaking region of Gonder, the town boasts a rich heritage" becomes "The town is in the Gonder region."
 
-### 5. Vague attribution
+### 5. Vague attribution and generic specifics
 
 Watch for: "experts argue", "observers have noted", "industry reports suggest", "studies show", "critics say", "it is widely believed", with no named source.
 
-This is the one pattern an editor must never fix directly, because the fix requires information only the author has.
+Watch for, second form: detail that gestures at specificity without containing any. Anecdote characters with a first name and a job title only ("Sarah, a marketing manager"), "a mid-sized company in the Midwest", suspiciously round numbers with no source, an example that would fit any book on the subject unchanged. Generated anecdotes cluster on the same stock names and settings; a real person comes with a surname, a place, a year, or an odd particular.
 
-Default action: Comment, always. "Which experts? Needs a named source or a cut." If the manuscript cites a real source nearby, a track change attaching the claim to that source is allowed.
-Dose: none. Every unsourced attribution gets flagged.
+Both forms need information only the author has, so this is the pattern an editor must never fix directly.
+
+Default action: Comment, always. For attribution: "Which experts? Needs a named source or a cut." For a generic specific: "Is this a real person or company? If real, an anchoring detail (full name, place, year) would carry it. If illustrative or composite, say so in the text." If the manuscript cites a real source nearby, a track change attaching the claim to that source is allowed. The specificity must come from the author; never invent it.
+Dose: none. Every unsourced attribution and every generic specific gets flagged.
 
 ### 6. Formulaic sections
 
@@ -72,11 +74,11 @@ Default action: Comment on the section plus a cover-letter note. Restructuring i
 
 ### 7. AI vocabulary
 
-Watch for, tier one (near-certain tells, cut or replace on sight): delve, tapestry (abstract), landscape (abstract), interplay, testament, underscore (verb), showcase (verb), foster, garner, elevate, embark, harness, supercharge, leverage (verb), utilize, facilitate, empower, streamline, paradigm shift, game changer, transformative, cutting-edge, robust (figurative).
+Watch for, tier one (near-certain tells, cut or replace on sight): delve, tapestry (abstract), landscape (abstract), interplay, testament, underscore (verb), showcase (verb), foster, garner, gate/gated/gating (figurative; established technical senses such as feature gating stay), elevate, embark, harness, supercharge, leverage (verb), utilize, facilitate, empower, streamline, paradigm shift, game changer, transformative, cutting-edge, robust (figurative).
 
-Watch for, tier two (fine alone, a tell in clusters): crucial, pivotal, key (adjective), vital, enduring, intricate, vibrant, enhance, highlight (verb), valuable, notably, additionally, moreover.
+Watch for, tier two (fine alone, a tell in clusters): crucial, pivotal, key (adjective), vital, enduring, intricate, vibrant, enhance, highlight (verb), valuable, notably, additionally, moreover, align with, emphasize, quietly (as drama: "quietly became").
 
-Default action: Track change to the plain word ("use" for "utilize", "build" for "foster", "run through" for "delve into"). Tier two: leave singles, thin clusters.
+Default action: Track change to the plain word ("use" for "utilize", "build" for "foster", "run through" for "delve into"). Tier two: leave singles, thin clusters. Empty adverbs ("actually", "literally", "simply") live in pattern 21.
 Dose: tier one, zero tolerance. Tier two, flag when three or more land in a paragraph.
 
 ### 8. Copula avoidance
@@ -104,11 +106,13 @@ Genuine triads exist; the tell is recurrence and padding.
 Default action: Track change when a member is clearly filler (cut to two, or to the one that matters). Leave real triads.
 Dose: flag when triads recur within a few pages.
 
-### 11. Synonym cycling
+### 11. Synonym cycling and repeated sentence openings
 
-Watch for: the same referent renamed each mention ("the protagonist… the main character… the central figure… the hero").
+Watch for: the same referent renamed each mention ("the protagonist… the main character… the central figure… the hero"); consecutive sentences opening on the same subject and shape ("She noted the door. She noted the lock on it. She filed both away.").
 
-Default action: Track change. Repeat the right word; repetition of a precise term is correct style.
+Cycling fakes variety the prose does not need; repeated openings drop variety it does. Both come from handling repetition by rule instead of by ear.
+
+Default action: Track change. For cycling, repeat the right word; repetition of a precise term is correct style. For repeated openings, merge the sentences, change one subject, or open one on the action. Fix the shape, not the repeated word; the surviving sentence may still start with "She". Deliberate repetition that builds pressure ("She came. She saw. She conquered.") is voice. For rhythm problems at passage scale, see pattern 27.
 
 ### 12. False ranges
 
@@ -141,7 +145,7 @@ Dose: a lone em dash used well is good prose. Leave it.
 
 Watch for: straight quotes in a manuscript that should ship with smart quotes; apostrophes rendered as straight ticks.
 
-Book publishing uses smart (curly) quotes. Here they are a requirement, never a tell. Mixing is the artifact; see pattern 30 for the mechanical sweep.
+Book publishing uses smart (curly) quotes. Here they are a requirement, never a tell. Mixing is the artifact; see pattern 36 for the mechanical sweep.
 
 Default action: Track change straight to smart, per the style sheet.
 
@@ -193,25 +197,27 @@ Default action: Track change. These are the first cuts in any compression pass.
 
 ### 22. Hedge stacking
 
-Watch for: multiple qualifiers on one claim ("could potentially possibly be argued that… might").
+Watch for: multiple qualifiers on one claim ("could potentially possibly be argued that… might"); caveat tics accumulating across a passage: "to be fair", "it's also possible", "might arguably", "in some cases it may".
 
-One hedge is honesty; a stack is evasion. Keep the strongest single qualifier the claim deserves.
+One hedge is honesty; a stack is evasion. Revision loops add qualifiers a pass at a time until every claim sounds unsure. Keep the strongest single qualifier the claim deserves, and cut caveats that exist only to repair an earlier overstatement.
 
 Default action: Track change to one hedge or none.
 
 ### 23. Throat-clearing and signposting
 
-Watch for: "Let's dive in", "let's explore", "here's what you need to know", "without further ado"; conversational hooks used as fake-candid openers ("Honestly?", "Look,", "Here's the thing", "Let's be honest"); rhetorical setups ("What if I told you", "Think about it").
+Watch for: "Let's dive in", "let's explore", "let's break this down", "now let's look at", "here's what you need to know", "without further ado", "heads up", "quick note", "before I forget"; conversational hooks used as fake-candid openers ("Honestly?", "Look,", "Here's the thing", "Let's be honest"); rhetorical setups ("What if I told you", "Think about it").
+
+The announcement can wear a casual register too ("one thing that bit me hard, so pay attention to this part:"). Remove the announcement, not just its formal tone.
 
 Default action: Track change, delete; the paragraph starts at its first real claim. Leave "honestly" and "look" when they occur mid-sentence in a genuinely conversational voice; the tell is the standalone theatrical opener.
 
-### 24. Authority tropes and faux-insight setups
+### 24. Authority tropes, faux-insight setups, and significance narration
 
-Watch for: "the real question is", "at its core", "what really matters", "the deeper issue", "the heart of the matter"; "what most people miss", "what nobody tells you", "the part everyone gets wrong".
+Watch for: "the real question is", "at its core", "what really matters", "the deeper issue", "the heart of the matter"; "what most people miss", "what nobody tells you", "the part everyone gets wrong"; and, after a point has been made, commentary narrating its weight: "That last part matters more than it sounds", "This distinction matters", "The key point is", "As you can see", "Read that again", a redundant "In other words".
 
-The sentence that follows usually restates an ordinary point with ceremony. Keep the point, cut the ceremony.
+The setup puts ceremony before the point; the narration puts ceremony after it. Either way the sentence tells the reader the point matters instead of making it matter.
 
-Default action: Track change.
+Default action: Track change. Keep the point, cut the ceremony. When the point does not read clearly without the aside, the fix belongs in the point's own sentence, built from support already in the manuscript.
 
 ### 25. Colon reveals
 
@@ -228,15 +234,17 @@ Default action: Track change. Replace the formula with the concrete claim it ges
 
 ### 27. Manufactured staccato and robotic rhythm
 
-Watch for: runs of clipped fragments engineered for drama ("No aesthetic prior. No nostalgia. The old rules were gone."); paragraphs where every sentence has the same length and shape; every paragraph landing on a punchline.
+Watch for: runs of clipped fragments engineered for drama ("No aesthetic prior. No nostalgia. The old rules were gone."); paragraphs where every sentence has the same length and shape; every paragraph landing on a punchline; pages where sentence length barely varies; chapters whose paragraphs all run to the same size.
 
-One short sentence for emphasis is human writing. A run of them is percussion.
+One short sentence for emphasis is human writing. A run of them is percussion. Uniformity is the same tell at document scale: a human page mixes a six-word sentence with a forty-word one, and a two-line paragraph with a half-page one, where generated pages average out. On a suspect page, count words per sentence (the pre-delivery checklist has a spot check); when most sentences land within a few words of the mean, read the page aloud before deciding anything.
 
-Default action: Comment, usually. Rhythm rebuilds are voice-level judgment calls; propose the rebuild in a comment during calibration, then apply the agreed treatment as track changes in later chunks. Track change directly only when the fix is a simple merge of two fragments.
+Default action: Comment, usually. Rhythm rebuilds are voice-level judgment calls; propose the rebuild in a comment during calibration, then apply the agreed treatment as track changes in later chunks. Track change directly only when the fix is a simple merge of two fragments. For document-level monotony, comment during calibration and propose where the variance should come from: splitting one overlong sentence, merging two clipped ones, letting a short paragraph stand alone. Variance comes from cuts and merges of what is already there, never from padding.
 
 ### 28. Generic conclusions and recap endings
 
-Watch for: "The future looks bright", "Exciting times lie ahead", "a major step in the right direction"; chapter endings that summarize the chapter just read.
+Watch for: "The future looks bright", "Exciting times lie ahead", "a major step in the right direction"; final paragraphs opening "In conclusion", "In summary", or "Overall"; chapter endings that summarize the chapter just read, sized like a term paper's.
+
+Human conclusions run short; a chapter that has made its argument can simply stop.
 
 Default action: Track change. Cut the send-off; end on the last concrete fact, takeaway, or forward action the manuscript actually supports. A recap that the author clearly built as a pedagogical device gets a comment instead.
 
@@ -256,29 +264,47 @@ Left behind by AI-assisted revision loops. The reader has no earlier version.
 
 Default action: Track change to describe the thing as it is.
 
+### 31. Answering objections nobody raised
+
+Watch for: defenses against criticism that appears nowhere in the text: "This isn't mainly about X", "I'm not saying", "I'm not arguing that", "To be clear, this doesn't mean", "Don't get me wrong", "Some might say… but" with no such objection anywhere in the book.
+
+The writer rebuts a critic who is not on the page, and the rebuttal displaces the claim itself. A direct negative claim ("the API is not thread-safe") is not this pattern; the tell is the unattributed defense of a point never stated plainly.
+
+Default action: Track change. Delete the phantom objection and its rebuttal; state the claim directly. A defense anchored to a real counterargument (a cited critic, an earlier chapter's caveat) stays. For the one-sentence contrast form, see pattern 9.
+Fix: "This isn't mainly about prompt length. The retrieval step is the bottleneck" becomes "The retrieval step is the bottleneck."
+
+### 32. Rejecting fake alternatives
+
+Watch for: an option no reader would weigh, introduced only to be dismissed in the same clause: "A tempting approach would be", "One might be tempted to", "An obvious approach would be", "It would be easy to just", "You might think… but", where the option never appears again.
+
+The phantom option is drafting scaffolding left in the final text. It manufactures the look of considered judgment without doing any. One rejected option can be legitimate analysis; several short, unrelated rejections are the tell.
+
+Default action: Track change. Cut the fake alternative and state the real constraint or choice directly. An alternative the book's readers genuinely face is analysis; leave it and give it a fair sentence.
+Fix: "A tempting approach would be to rotate tokens by restarting the service nightly, but that would drop every active session. Rotation happens in place" becomes "Rotation happens in place; a restart would drop every active session."
+
 ## Group 6: Mechanical artifacts of humanizer passes
 
 Debris left by automated de-slopping tools. All of it is unambiguous. Sweep for these with grep before reading for prose; they hide in clean-looking paragraphs.
 
-### 31. Stranded punctuation from dash conversion
+### 33. Stranded punctuation from dash conversion
 
 Watch for: ",," sequences, ", ," patterns, a comma followed by a capitalized clause where a dash was mechanically swapped out, commas that break the sentence's grammar.
 
 Default action: Track change. Read the sentence aloud and restore working punctuation.
 
-### 32. Double spaces
+### 34. Double spaces
 
 Watch for: two or more spaces between sentences or words. Grep: `  ` (two spaces).
 
 Default action: Track change to single spaces.
 
-### 33. Broken list structure
+### 35. Broken list structure
 
 Watch for: orphaned bullet or number markers, items that lost their markers, indentation drift within one list, a list interrupted by a stray paragraph.
 
 Default action: Track change to restore the list; comment if it is unclear whether the passage should be a list or prose.
 
-### 34. Quote and apostrophe mixing
+### 36. Quote and apostrophe mixing
 
 Watch for: straight and curly quotes in the same paragraph, straight apostrophes inside curly-quoted text, unpaired smart quotes. Grep for `"` and `'` in a smart-quote manuscript.
 
@@ -297,6 +323,9 @@ A clean human writer trips several of these patterns without any machine involve
 - Passive voice with a justified missing actor.
 - Watched phrases inside quotations, titles, or text that discusses the phrase itself. Never edit quoted material.
 - Dry prose. Machine prose has specific tells; dryness without them is just a dry writer.
+- Deliberate repeated openings that build pressure ("She came. She saw. She conquered."). Pattern 11 targets repetition that adds nothing.
+- Real scope statements and disclaimers: legal or safety notices, corrections, a named critic answered in full, FAQ answers. Pattern 31 targets only the unanchored defense.
+- Real alternatives the reader genuinely faces (a design choice weighed, a route not taken and explained). Pattern 32 targets only the phantom kind, dismissed in a clause and never mentioned again.
 
 One instance means nothing. An em dash plus a rule of three plus "vibrant tapestry" plus a recap ending in the same section is a confession.
 
@@ -311,6 +340,13 @@ These are evidence of a person on the page. Over-editing them destroys the manus
 - Genuine asides, parentheticals, and self-corrections.
 - Distinctive vocabulary, bluntness, humor, and admitted uncertainty.
 - Real variety in sentence length, including the occasional too-long sentence that works.
+- Paragraphs of genuinely different sizes, including the one-sentence paragraph that earns its line.
+- Conclusions that stop early instead of recapping.
+- Contractions and register that match how the writer talks.
+- Willingness to criticize by name and to leave a judgment unbalanced.
+- Proper nouns with anchors: surnames, places, years, product versions.
+
+When an edit must insert text, the insertion should carry these qualities too, in the author's register. An insertion that is smoother, more formal, and more evenly paced than the page around it reads as a seam.
 
 ## Editing principles
 
