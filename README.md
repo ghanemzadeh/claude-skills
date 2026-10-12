@@ -6,7 +6,7 @@ A collection of [Claude skills](https://www.anthropic.com/news/skills) for serio
 
 | Skill | What it does |
 |---|---|
-| [`line-and-copy-editor`](./line-and-copy-editor) | Combined line + copy editing for nonfiction manuscripts in a single sweep: sentence-level prose work plus grammar, consistency, and factual cross-checks. Built for manuscripts that have been through AI-assisted drafting or "humanizer" passes. Produces real Word track changes, a running style sheet, and an editorial cover letter. Ships with a 36-pattern catalog of machine-drafting tells and a pre-delivery checklist. |
+| [`line-and-copy-editor`](./line-and-copy-editor) | Combined line + copy editing for nonfiction manuscripts in a single sweep: sentence-level prose work plus grammar, consistency, and factual cross-checks. Built for manuscripts that have been through AI-assisted drafting or "humanizer" passes. Produces real Word track changes, a running style sheet, and an editorial cover letter. Ships with a 40-pattern catalog of machine-drafting tells and a pre-delivery checklist. |
 
 Each skill in this repo is self-contained; install only the ones you need.
 
@@ -40,7 +40,7 @@ ln -s "$(pwd)/claude-skills/line-and-copy-editor" ~/.claude/skills/line-and-copy
     ├── README.md                          # skill-specific docs
     └── references/
         ├── style-guide-template.md        # running style sheet template
-        ├── ai-prose-patterns.md           # 36-pattern machine-drafting catalog
+        ├── ai-prose-patterns.md           # 40-pattern machine-drafting catalog
         └── pre-delivery-checklist.md      # per-chunk pass/fail self-check
 ```
 
@@ -52,11 +52,11 @@ The `line-and-copy-editor` skill was adapted from prior projects, all used under
 
 **[@felipelobomotta-blip/book-genesis-v4](https://github.com/felipelobomotta-blip/book-genesis-v4)**: provided framing for the editor's role definition, scope boundaries, AI-prose artifact awareness, and quality-bar conventions.
 
-**[@blader/humanizer](https://github.com/blader/humanizer)** (v2.11.2): provided the AI-writing pattern set adapted into `references/ai-prose-patterns.md`, itself based on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide.
+**[@blader/humanizer](https://github.com/blader/humanizer)** (v3.1.0): provided the AI-writing pattern set adapted into `references/ai-prose-patterns.md`, itself based on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide.
 
-**[@petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)** (v1.0.6): provided editing principles (minimum effective edits, proportionality, the portability test), word lists, and the eval-checklist approach adapted into `references/pre-delivery-checklist.md`.
+**[@petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)** (v1.0.6; main as of September 2026): provided editing principles (minimum effective edits, proportionality, the portability test), word lists, and the eval-checklist approach adapted into `references/pre-delivery-checklist.md`.
 
-The skill's "Editing toward human prose" section also draws on published research from Pangram Labs ([pangram.com/blog](https://www.pangram.com/blog) and the [Pangram substack](https://pangram.substack.com)) about document-level differences between human and AI prose. This is a research citation, not reused code or text, so it sits outside the MIT notices below.
+The skill's "Editing toward human prose" section also draws on published research from Pangram Labs ([pangram.com/blog](https://www.pangram.com/blog) and the [Pangram substack](https://pangram.substack.com)) about document-level differences between human and AI prose, and on the October 2026 revision of Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide (model-era vocabulary, em-dash overuse as a historical sign, the comma-and-period monotony of dash-suppressed models, and syntax more common in human writing). These are research citations, paraphrased rather than reused, so they sit outside the MIT notices below.
 
 All four are released under the MIT License. The required copyright notice and permission text:
 

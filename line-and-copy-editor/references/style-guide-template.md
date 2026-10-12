@@ -104,6 +104,20 @@ Specific dates, dollar figures, employee counts, valuations, founding years. Wit
 
 ---
 
+## Voice baseline
+
+The author's own unassisted writing, measured once at the start (pre-delivery checklist item 10 prints the numbers). Insertions and rhythm repairs aim at these numbers.
+
+- **Source:** [earlier book / articles / pre-2022 chapters / cleanest untouched manuscript passages]
+- **Chapters known to be AI-drafted or humanizer-processed:** [list, or "unknown"]
+- **Sentence length:** [mean, sd, share outside the 8–20 band]
+- **Punctuation per 1,000 words:** [semicolons, colons, parentheses, em dashes]
+- **Contractions:** [freely / rarely / never]
+- **Habitual openers and transitions:** [e.g., "So", "And", "Still,"]
+- **Pet words and phrasings to protect:**
+
+---
+
 ## Author voice notes
 
 Things that look like errors but are intentional. Do not silently correct.
@@ -129,9 +143,9 @@ Things that look like errors but are intentional. Do not silently correct.
 
 Per-chapter counts for the dosed patterns in `ai-prose-patterns.md`. Update after each chunk; over-budget chapters get a comment flagging the pattern.
 
-| Chapter | Negative parallelisms kept | Rule-of-three kept | And/But openers | Em dashes remaining | Colon reveals kept | Notes |
-|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |
+| Chapter | Negative parallelisms kept | Rule-of-three kept | And/But openers | Em dashes remaining | Colon reveals kept | Punctuation range vs baseline | Notes |
+|---|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |  |
 
 ---
 

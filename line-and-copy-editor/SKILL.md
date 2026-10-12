@@ -18,7 +18,7 @@ allowed-tools:
   - Bash
   - AskUserQuestion
 metadata:
-  version: "2.1.0"
+  version: "2.2.0"
 ---
 
 # Line and copy editor
@@ -80,10 +80,11 @@ An edit may not introduce any fact, name, number, date, quote, or source that is
    - Target wordcount or compression percentage
    - Defined terms that are capitalized as proper nouns (any coined concept the book treats as a proper noun)
    - Chunk size and delivery cadence
+5. Establish a voice baseline. Ask the author for a sample of their own unassisted writing: an earlier book, published articles, a blog, chapters written before November 2022, even long emails. Ask which chapters were AI-drafted or run through a humanizer tool, if they know. Record the baseline's habits on the style sheet: typical sentence lengths, punctuation (dashes, semicolons, parentheses, colons), contractions, sentence openers, transitions, and pet words. The baseline overrides the catalog's defaults: if the author's own writing uses dashes or long sentences, the edit keeps them at about the author's rate. Without a sample, take the voice from the manuscript's cleanest passages that show no catalog patterns.
 
 ## AI-prose artifacts
 
-If the manuscript has been AI-drafted or run through a humanizer tool, pattern work is the core of the edit. The full catalog lives in `references/ai-prose-patterns.md`: thirty-six patterns across six groups (content, language, style, communication, filler and rhetoric, and the mechanical debris humanizer passes leave behind), each with a default action and, where relevant, a per-chapter dose budget.
+If the manuscript has been AI-drafted or run through a humanizer tool, pattern work is the core of the edit. The full catalog lives in `references/ai-prose-patterns.md`: forty patterns across seven groups (content, language, style, communication, filler and rhetoric, document-level patterns, and the mechanical debris humanizer passes leave behind), each with a default action, a strength note, and, where relevant, a per-chapter dose budget. It opens with a short account of why machine prose reads the way it does; that account is the test for any case the catalog does not list.
 
 Three principles from the catalog shape everything else:
 
@@ -91,19 +92,27 @@ Three principles from the catalog shape everything else:
 - Sweep for mechanical artifacts (double spaces, stranded commas, quote mixing) with grep before reading for prose. They hide in clean-looking paragraphs.
 - Cross-chapter consistency needs lists, not memory: recurring names, facts, defined-term capitalization. Build the lists early (see Cross-chapter consistency below) and grep against them.
 
+**Assessment-only requests.** When the author asks whether the manuscript reads as AI-written, or wants an audit before committing to an edit, deliver a findings report instead of tracked changes: for each finding, the pattern number and name, the quoted line, its location, and a fix in a few words, plus the document-level findings (rhythm, punctuation monotony, style seams, re-explained material). Do not give an authorship verdict or a detector-style score. Named patterns are evidence the author can check; a verdict is a guess. Offer the edit afterward.
+
 ## Editing toward human prose
 
-Removing machine tells is half the prose layer. A page can be clean of every cataloged pattern and still read machine-made, because the strongest signals are document-level: how sentence lengths vary, how paragraphs are sized, how chapters end, whether insertions match the author's register. AI detectors such as Pangram are holistic classifiers trained on whole documents; scrubbing tells does not fool them, and this skill makes no attempt to. The durable edit gives the prose the qualities human writing actually has. Aim at those directly:
+Removing machine tells is half the prose layer. A page can be clean of every cataloged pattern and still read machine-made, because the strongest signals are document-level: how sentence lengths vary, how paragraphs are sized, how chapters end, whether insertions match the author's register. AI detectors such as Pangram are holistic classifiers trained on whole documents; scrubbing tells does not fool them, and this skill makes no attempt to. The durable edit gives the prose the qualities human writing actually has. Aim at those directly.
 
-- **Sentence rhythm.** A human page mixes a six-word sentence with a forty-word one. Preserve that mix and restore it where drafting flattened it. When compression tightens many sentences at once, vary where the cuts land so the survivors differ in length and shape.
+The root difference: a model makes the choice that suits the widest range of readers, and a person makes the choice that suits one reader and one subject. Human prose is uneven and specific because it was chosen for someone. Every quality below is a version of that.
+
+- **The author's voice.** The target is the voice baseline (Before starting, step 5). Match its sentence lengths, punctuation, openings, and transitions in every insertion.
+- **Sentence rhythm.** A human page mixes a six-word sentence with a forty-word one. Preserve that mix and restore it where drafting flattened it. When compression tightens many sentences at once, vary where the cuts land so the survivors differ in length and shape. The newest models clamp sentences to roughly 8 to 20 words; a page with nothing outside that band is flattened, however clean it reads (pattern 35).
+- **Punctuation range.** Human writers use semicolons, parentheses, colons, and the occasional dash. Models tuned against em dashes, and humanizer passes that ban them, leave pages of commas and periods only, and that is now a recognized tell in its own right. When a dash has to go, choose the replacement the sentence needs, not a comma every time, and protect the author's semicolons and parentheses.
+- **Plain syntax.** Human prose says "is" and "has", "wrote" and "used", "the first" and "the only". It keeps some ordinary qualifiers ("perhaps", "tends to") and the occasional wordy "in order to". Compression cuts padding; it never sweeps these to zero, because a page with none of them reads over-processed.
 - **Paragraph variance.** Uniform paragraph sizes are a machine signature. Let a one-sentence paragraph stand. Never split or merge paragraphs to make the page tidier.
 - **Endings.** Human conclusions run short. Cut recap padding (pattern 28) and let chapters end on their last concrete point.
 - **Register.** Insertions match the author's baseline. If the author writes contractions, insertions use contractions; if the author is blunt, the insertion is blunt. Formal text spliced into a loose manuscript reads as a seam.
 - **Specificity.** Human writing holds hard-to-fabricate particulars. Where the manuscript goes vague or suspiciously generic (pattern 5), the route to specificity is an author query asking for the lived detail. Never invent it.
 - **Honest negativity.** Relentless positivity is a machine register. Where the author criticizes, admits uncertainty, or leaves a judgment mixed, protect it.
-- **Imperfection.** A slightly awkward sentence in the author's voice beats a smooth one in nobody's. Merely imperfect is not a defect; leave it.
+- **Imperfection.** A slightly awkward sentence in the author's voice beats a smooth one in nobody's. Merely imperfect is not a defect; leave it. Mixed registers are human too: a technical writer who turns casual mid-paragraph is not a defect to normalize.
+- **Patch, then listen.** After fixing flagged phrases in a paragraph, read it aloud. If it still sounds generated, the shape is the problem; rebuild the sentence around its main point, inside the paragraph and with the same facts, rather than swapping more words.
 
-The catalog's "Signs of human writing" section lists what these qualities look like on the page, and the pre-delivery checklist carries the aggregate checks: rhythm variance on edited pages, register match in insertions, endings free of recap.
+The catalog's "Signs of human writing" section lists what these qualities look like on the page, and the pre-delivery checklist carries the aggregate checks: rhythm variance and punctuation range on edited pages, register match in insertions, endings free of recap.
 
 ## Pass structure for a combined edit
 
@@ -124,7 +133,7 @@ The wordcount target is the discipline. A 10–15% cut removes roughly one word 
 **Where the cuts come from, in priority order:**
 
 1. Hedging phrases and meta-commentary ("It's worth noting," "As we will see," "What's interesting here").
-2. Adverb pile-ups ("very," "really," "quite," "essentially," "fundamentally," "ultimately").
+2. Adverb pile-ups ("very," "really," "quite," "essentially," "fundamentally," "ultimately"). Thin them; do not zero them out (see Plain syntax above).
 3. Throat-clearing sentence openers that restate what the previous paragraph already said.
 4. Rule-of-three and parallel constructions where two members do the work of three.
 5. Long subordinate clauses that can be promoted to their own short sentence or cut entirely.
@@ -246,7 +255,7 @@ When the engagement is done:
 - Zero factual contradictions across chapters for any specific date, number, or name
 - Zero discrepancies between in-text citations and the reference list
 - Style sheet complete enough that someone else could pick up a future revision and stay consistent
-- Rhythm intact at page scale: sentence and paragraph lengths in edited pages vary at least as much as in the author's cleanest untouched ones
+- Rhythm intact at page scale: sentence and paragraph lengths in edited pages vary at least as much as in the author's cleanest untouched ones, and punctuation range matches the voice baseline
 - Author voice intact. This is the criterion that fails most often: if the author reads the edited version and feels smoothed into someone else, the edit is too heavy, however clean the prose reads.
 
 ## Deliverables
@@ -271,7 +280,7 @@ If the author hasn't specified, default to:
 - Italics: book titles, film titles, ship and aircraft names, foreign words on first use only
 - Defined and coined terms capitalized as proper nouns where the author has signaled this; document in the style sheet on first encounter
 
-Note one deliberate divergence from web-oriented de-slopping tools such as humanizer: those ban em dashes and curly quotes outright, because on the web they read as machine tells. In book publishing both are standard. This skill keeps them and polices density instead; the calibrated em-dash rule is pattern 14 in `references/ai-prose-patterns.md`.
+Note one deliberate divergence from web-oriented de-slopping tools such as humanizer: those ban em dashes outright and treat curly quotes as a tell, because on the web they read as machine habits. In book publishing both are standard. This skill keeps them and polices density instead; the calibrated em-dash rule is pattern 14 in `references/ai-prose-patterns.md`. The evidence supports the divergence: the newest models suppress dashes, so a dash ban now pushes prose toward the comma-and-period monotony that marks recent machine output (pattern 35).
 
 Confirm any deviations with the author and lock them into the style sheet at the top.
 
