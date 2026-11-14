@@ -10,7 +10,7 @@ A living document. Update it on every chunk. Check it before starting each new c
 - **Title / working title:**
 - **Genre:**
 - **Style standard:** [e.g., The Chicago Manual of Style, 18th ed.]
-- **Dictionary:** [e.g., Merriam-Webster (merriam-webster.com); Collegiate 11th ed. in print]
+- **Dictionary:** [e.g., Merriam-Webster (merriam-webster.com); Collegiate 12th ed. in print]
 - **Variant of English:** [US / UK / CA / AU]
 - **Starting wordcount:**
 - **Target wordcount:**

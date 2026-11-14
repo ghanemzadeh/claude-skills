@@ -5,7 +5,7 @@ Read this file before editing the first chunk. It lists the patterns that mark a
 Two rules govern every entry:
 
 1. **This is surgery, not regeneration.** Fix each instance with the smallest edit that works. Never rewrite a passage wholesale and never run text through another generation pass.
-2. **Never fabricate.** An edit may not introduce any fact, name, number, date, quote, or source that is not already in the manuscript or its citations. When a sentence needs information the manuscript does not contain (a source for a vague claim, a date for a hedge), the correct move is a query comment to the author.
+2. **Never fabricate.** An edit may not introduce any fact, name, number, date, quote, or source that is not already in the manuscript or its citations. When a sentence needs information the manuscript does not contain (a source for a vague claim, a date for a hedge), the correct move is a query comment to the author. The rule covers details the editor knows to be true from outside the manuscript: offer one in a comment for the author to verify, and keep it out of the text. Humanizer has supplied such specifics itself since v4.0.0; this skill does not follow it, because an editor's confident addition to a nonfiction book is an unsourced claim under the author's name.
 
 ## Why machine prose reads the way it does
 
@@ -23,6 +23,7 @@ Two tests follow. Every sentence that survives the edit should give the reader s
   - *Leave*: within dose, or a legitimate stylistic choice.
 - **Dose** appears where a pattern is only a problem in aggregate. Track tallies per chapter in your working notes. One instance of most of these patterns is ordinary writing; the tell is density.
 - **Strength.** The strongest tells justify an edit on one sighting: unearned contrasts (9), chat residue (18, 20), staged run-ups (23), significance narration and deep-sounding sayings (24), kickers and one-line closers (26), and arguing with no one (31, 32). Patterns marked *weak alone* need company from other tells in the same passage before they count as evidence of machine drafting; they may still deserve an edit on ordinary editorial grounds.
+- **Age.** Signs go stale as models change. Wikipedia's guide now tags any sign whose examples are more than six months old, and as of November 2026 the tagged or historical ones include significance inflation (1), online-presence padding (2), promotional language (4), vague attribution (5), and copula avoidance (8). All five are still worth editing, because they weaken the prose whoever wrote it. As evidence that a passage was drafted by a recent model they weigh less than the structural patterns.
 
 ## Group 1: Content patterns
 
@@ -37,10 +38,12 @@ Fix: "The institute was established in 1989, marking a pivotal moment in regiona
 
 ### 2. Notability padding
 
-Watch for: lists of media outlets with no context ("has been cited in the Times, the BBC, and the Financial Times"), follower counts, "written by a leading expert".
+Watch for: lists of media outlets with no context ("has been cited in the Times, the BBC, and the Financial Times"), follower counts, "maintains an active social media presence", "written by a leading expert".
 
-Default action: Track change if one citation in the list carries real context in the manuscript (keep that one, cut the roll call). Comment if none do: ask the author which mention matters and what was actually said. Do not invent the context.
-Dose: a single contextualized citation is fine; the roll call is the tell.
+Watch for, 2026 form: a source narrated for the act of identifying someone. "Company filings identify him as a director", "was identified by the registry as", "is listed in", "her professional profile lists", "his personal website identifies him as", "his parliamentary biography records that he served as". The sentence stresses that a record exists and what it calls the subject, in a stilted formula, where a writer would state the fact and cite it. Wikipedia reports this form became common in 2026 as the older roll call of outlets faded.
+
+Default action: Track change if one citation in the list carries real context in the manuscript (keep that one, cut the roll call). Comment if none do: ask the author which mention matters and what was actually said. Do not invent the context. For the identification form, track change to the plain fact with its citation ("He was a director of the company from 2015 to 2019"), keeping the source in the note or reference where the manuscript already cites it.
+Dose: a single contextualized citation is fine; the roll call is the tell. Attribution that matters stays: when sources disagree, or the claim is contested, saying who says so is the point.
 
 ### 3. Superficial "-ing" analysis
 
@@ -55,7 +58,9 @@ Fix: "The palette uses blue and gold, reflecting the community's deep connection
 
 Watch for: "vibrant", "nestled", "breathtaking", "renowned", "stunning", "rich cultural heritage", "boasts", "in the heart of", "must-visit", "groundbreaking" (figurative), "commitment to excellence", "profound", "exemplifies", "featuring", "diverse array".
 
-Ad copy in the middle of nonfiction. The neutral version is nearly always shorter. Newer models are subtler: the copy is merely relentlessly upbeat, every company "innovative", every outcome a success. Honest negativity is a human signal (see "Signs of human writing").
+Ad copy in the middle of nonfiction. The neutral version is nearly always shorter, and the edit is worth making whoever wrote the sentence.
+
+As evidence of machine drafting this pattern has aged. Wikipedia now files blatant promotional prose under historical indicators (2023 to 2025): current models keep a neutral tone unless asked for a sales one, so a page of "nestled" and "breathtaking" points to an older model, a marketing brief, or a human copywriter. *Weak alone* in recently drafted text. In newer output the promotion sits in what gets included, such as awards, coverage, and successes with no failures beside them (pattern 2). Honest negativity is a human signal (see "Signs of human writing").
 
 Default action: Track change to the neutral statement.
 Fix: "Nestled in the breathtaking region of Gonder, the town boasts a rich heritage" becomes "The town is in the Gonder region."
@@ -68,7 +73,7 @@ Watch for, second form: detail that gestures at specificity without containing a
 
 Both forms need information only the author has, so this is the pattern an editor must never fix directly. A plain claim with no citation is not this pattern; most writing is unsourced. The tell is the gesture at an authority or a specific that is not there.
 
-Default action: Comment, always. For attribution: "Which experts? Needs a named source or a cut." For a generic specific: "Is this a real person or company? If real, an anchoring detail (full name, place, year) would carry it. If illustrative or composite, say so in the text." If the manuscript cites a real source nearby, a track change attaching the claim to that source is allowed. The specificity must come from the author; never invent it.
+Default action: Comment, always. For attribution: "Which experts? Needs a named source or a cut." For a generic specific: "Is this a real person or company? If real, an anchoring detail (full name, place, year) would carry it. If illustrative or composite, say so in the text." If the manuscript cites a real source nearby, a track change attaching the claim to that source is allowed. The specificity must come from the author; never invent it. When the editor happens to know the missing source or detail, name it in the comment as a lead for the author to check.
 Dose: none. Every unsourced attribution and every generic specific gets flagged.
 
 ### 6. Formulaic sections
@@ -85,7 +90,7 @@ Watch for, tier one (near-certain tells, cut or replace on sight): delve, deep d
 
 Watch for, tier two (fine alone, a tell in clusters): crucial, pivotal, key (adjective), vital, enduring, intricate/intricacies, vibrant, enhance, highlight (verb), valuable, notably, additionally (especially opening a sentence), moreover, align with, emphasize, quietly (as drama: "quietly became").
 
-Watch for, tier three (recent models, mid-2026 on; ordinary words, so a tell only in dense clusters alongside other patterns): challenge, clearer, dependable, echoed, matters ("That matters", "this is what matters"), practical, prioritize, steady, universally.
+Watch for, tier three (recent models, mid-2026 on; ordinary words, so a tell only in dense clusters alongside other patterns): challenge, clearer, dependable, echoed, matters ("That matters", "this is what matters"), practical, prioritize, steady, universally; and science-flavored words used for tone where no study or method is in view: causal, empirical, correlate. Real statistical and scientific uses of those three stay.
 
 Vocabulary drifts with every model release ("delve" peaked in 2023 and has nearly vanished), so a page free of these words proves nothing. Take each entry literally: a word on the list does not put its synonyms on the list, and a formal word outside it is not a tell.
 
@@ -103,7 +108,7 @@ Fix: "The gallery serves as the exhibition space and boasts four rooms" becomes 
 
 ### 9. Negative parallelism and binary contrast
 
-Watch for: "It's not just X. It's Y.", "not only… but also", "This isn't about X, it's about Y", the reversed form "Y rather than X", the contrast split across sentences ("This does not mean X. It means Y."), negative listing ("not X, not Y, but Z"), tailing negation fragments ("no guessing", "no wasted motion").
+Watch for: "It's not just X. It's Y.", "not only… but also", "This isn't about X, it's about Y", the reversed form "Y rather than X", the same form opening a sentence ("Rather than introducing a new method, the book adapts an old one"), the contrast split across sentences ("This does not mean X. It means Y."), negative listing ("not X, not Y, but Z"), tailing negation fragments ("no guessing", "no wasted motion").
 
 The negative half names something nobody claimed, so the positive half sounds bigger. It adds weight without adding a claim. The information is in Y. State Y. This is currently the single most frequent structural tell in model prose; it also survives rewrites more often than any other pattern.
 
@@ -111,7 +116,7 @@ Keep a contrast when the negative half corrects a belief the book's reader actua
 
 Default action: Track change, unless one of the keep conditions holds.
 Dose: kept contrasts go on the tally. When a chapter keeps more than two, comment on the chapter's pattern once ("third 'not just X' in this chapter; I've rebuilt two, flagging the shape for your eye").
-Fix: "This does not mean every choice is equal. It means no outside system confirms which choice is right" becomes "No outside system confirms which choice is right, though the choices still have different consequences."
+Fix: "This does not mean every choice is equal. It means no outside system confirms which choice is right" becomes "The choices differ, but no outside system confirms which one is right."
 
 ### 10. Rule of three
 
@@ -173,11 +178,11 @@ Default action: Track change straight to smart, per the style sheet.
 
 ### 16. Decorative emphasis
 
-Watch for: mechanical boldface on key terms, bullet lists whose items open with a bolded header and a colon, emoji or decorative arrows (→) in headings or lists, bullets carrying what should be a prose paragraph, typographic shouting (one word in ALL CAPS, "every. single. day."), stray Markdown (asterisks, pound signs) surviving from a chat window.
+Watch for: mechanical boldface on key terms, bullet lists whose items open with a bolded header and a colon, emoji or decorative arrows (→) in headings or lists, bullets carrying what should be a prose paragraph, typographic shouting (one word in ALL CAPS, "every. single. day."), stray Markdown (asterisks, pound signs) surviving from a chat window, highlighted text pasted in with its highlighting, chat citation markers that match no note or reference ("[cite: 2, 6]", a bare "[1, 2]").
 
 Rare in trade nonfiction, common in AI-drafted chapters that began life as an outline.
 
-Default action: Comment first (formatting can be a design decision the author or publisher owns); track change when the author has already confirmed prose conventions on the style sheet.
+Default action: Comment first (formatting can be a design decision the author or publisher owns); track change when the author has already confirmed prose conventions on the style sheet. Orphan citation markers get a comment asking for the source; deleting one silently can strip the only trace of where a claim came from.
 
 ### 17. Heading conventions
 
@@ -187,23 +192,29 @@ Default action: Track change case drift to the style-sheet convention. Track-cha
 
 ## Group 4: Communication patterns
 
-Chat residue: text written to a user that survived into the manuscript. All of it is a track-change deletion.
+Chat residue: text written to a user that survived into the manuscript. Nearly all of it is a track-change deletion; the exception is a placeholder, which marks content only the author can supply.
 
-### 18. Chatbot artifacts
+### 18. Chatbot artifacts, placeholders, and drafting notes
 
-Watch for: "I hope this helps", "Let me know if", "Would you like me to", "Want me to", "Should I continue?", "Certainly!", "Of course!", "Here is an overview of", "Here's a revised version", "In this section, we will".
+Watch for: "I hope this helps", "Let me know if", "Would you like me to", "Want me to", "Should I continue?", "Certainly!", "Of course!", "Here is an overview of", "Here's a revised version", "In this section, we will"; advice addressed to the person who asked ("verify these dates before publishing", "confirm with the source before submitting").
+
+Watch for, placeholders: slots the draft never filled. "[Year]", "[Founder Names]", "[Source]", "(If available)", "(Add the figure here)", "Evidence to be supplied:".
+
+Watch for, drafting notes: outline instructions sitting in body text as if they were prose. "Expand to two short paragraphs once the body exists.", "One or two sentences.", "Use them for what he said, not for why it matters."
 
 This is the most certain tell in the catalog and the easiest to miss when it wraps real content, so scan chapter openings and endings for it specifically.
 
-Default action: Track change, delete. If deletion leaves a hole, open the section on its first substantive sentence.
+Default action: Track change, delete, for chat residue and drafting notes. If deletion leaves a hole, open the section on its first substantive sentence. A placeholder gets a comment naming what is missing; never fill the slot. "TK" is a publishing convention for material still to come and is usually the author's own: leave it in place and list every TK in the cover letter. A note that could be the author's reminder to self gets a comment instead of a deletion. For text that narrates its own drafting, see pattern 30.
 
 ### 19. Knowledge-cutoff disclaimers and speculative gap-filling
 
 Watch for: "as of this writing" (when nothing dates it), "while specific details are scarce", "based on available information", "not widely documented", "not publicly disclosed", "in the available sources", "maintains a low profile", "keeps personal details private", "likely grew up", "it is believed that".
 
-Two forms: the disclaimer that narrates a research gap, and the invented filler that papers over one. Both are dangerous in nonfiction because the filler reads as fact.
+Watch for, corrective framings (mid-2026 on): instructions about how a claim or source should be read, attached to no one. "This figure should be treated as an estimate rather than an exact count", "should be presented as … rather than …", "this does not by itself establish that"; and, weaker, "should not be confused with" used to disambiguate where no reader would confuse the two (*weak alone*).
 
-Default action: Track change deletes the disclaimer framing. The underlying gap gets a comment: "Source for this? As written it's a guess dressed as fact." Never fill the gap yourself.
+Three forms: the disclaimer that narrates a research gap, the invented filler that papers over one, and the caution about how to read a source. The first two are dangerous in nonfiction because the filler reads as fact. The third is recent: Wikipedia's guide calls it nearly unheard of in model output before mid-2026, so it also helps date a passage.
+
+Default action: Track change deletes the disclaimer framing. The underlying gap gets a comment: "Source for this? As written it's a guess dressed as fact." Never fill the gap yourself. For a corrective framing, track change to the plain statement of what the source shows ("The census counted about 4,000"), and keep a caution that a cited source makes itself or that the author can explain.
 
 ### 20. Sycophantic register
 
@@ -345,7 +356,7 @@ Dose: measured against the author's voice baseline. Some authors write spare com
 
 Watch for: a passage or chapter whose register, polish, spelling variety (US forms in a UK manuscript), dash spacing, quote style, or vocabulary breaks sharply from the manuscript around it; a section noticeably more fluent and less specific than the author's other pages.
 
-A seam usually marks text pasted in from a chat window or regenerated in isolation. It is the book-length version of Wikipedia's "pronounced shift in writing style" sign.
+A seam usually marks text pasted in from a chat window or regenerated in isolation. Wikipedia's guide makes the matching point from the other side: writing that stays consistent with what the same person wrote before chatbots existed is evidence of a human author.
 
 Default action: Fix mechanical conformance (spelling variety, dash spacing, quotes) as track changes per the style sheet. Comment on the register shift and name it in the cover letter. Never normalize the author's own pages toward the seam; the seam moves toward the author.
 
@@ -435,5 +446,5 @@ These govern how the catalog is applied. They come from the discipline of minimu
 - **The portability test.** If a sentence could sit unchanged in any book on any subject, it carries no information about this one. Cut it or make it specific, using material already in the manuscript.
 - **Fix the instance, flag the habit.** Track-change the individual occurrence; when a pattern recurs, one comment on the pattern serves the author better than ten identical annotations.
 - **Fix the shape.** Swapping a flagged word for a synonym leaves the shape that made it machine-like. If a sentence still reads generated after the patch, rebuild it around its main point, inside the same paragraph and with the same facts.
-- **Shape edits drop facts.** Cutting a triad, rebuilding a dash, or turning a bold-label list into prose is where a fact, a ranking, or an "at the same time" relation most often goes missing. Check each one against the original before moving on.
+- **Restructuring drops facts.** Cutting a triad, rebuilding a dash, or turning a bold-label list into prose is where a fact, a ranking, or an "at the same time" relation most often goes missing or comes out changed. Check each one against the original before moving on, and check it before anything else on the chunk.
 - **Second sweep for survivors.** After the edit, search the chunk again for the patterns that most often survive a rewrite: contrasts (9), closers and kickers (26), triads (10), dashes (14), and bold labels (16).

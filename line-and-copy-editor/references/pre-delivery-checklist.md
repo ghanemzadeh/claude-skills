@@ -1,6 +1,6 @@
 # Pre-delivery checklist
 
-Run this before delivering each chunk. Every line is pass or fail. A failed line means fix the chunk and run the checklist again; never deliver-and-note.
+Run this before delivering each chunk. Every line is pass or fail. A failed line means fix the chunk and run the checklist again; never deliver-and-note. When time is short, run the No fabrication block first: a dropped or changed fact costs the author more than any surviving tell.
 
 ## Voice
 
@@ -49,8 +49,8 @@ Run this before delivering each chunk. Every line is pass or fail. A failed line
 ## No fabrication
 
 16. Every fact, name, number, date, and source in inserted text already existed in the manuscript or its citations.
-17. Shape edits kept their facts. Every cut triad, rebuilt dash, and list turned to prose still carries each fact, ranking, and "at the same time" relation from the original.
-18. Every unverifiable claim encountered got a comment, never a silent fix or an invented specific.
+17. Restructured sentences kept their facts, unchanged. Every cut triad, rebuilt dash, and list turned to prose still carries each fact, ranking, and "at the same time" relation from the original, with no number, order, or relation altered.
+18. Every unverifiable claim encountered got a comment, never a silent fix or an invented specific. Details the editor knew from outside the manuscript went into comments only.
 
 ## Dose budgets
 
@@ -66,3 +66,4 @@ Run this before delivering each chunk. Every line is pass or fail. A failed line
 25. Style sheet, names list, and facts list reflect every decision made in this chunk.
 26. Every judgment call is a comment; nothing ambiguous was changed silently.
 27. Grep sweeps for mechanical artifacts came back clean: double spaces, ",," sequences, straight quotes in smart-quote text, orphaned list markers, spaced em dashes or typed " -- " in an unspaced-dash manuscript.
+28. Coverage is stated. The chunk was edited from the current file on disk, read in full before the first change, and the delivery note says which chapters or sections were covered and names any that were not. A partial pass is reported as partial.
